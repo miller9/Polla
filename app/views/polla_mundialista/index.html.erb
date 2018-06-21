@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1><center>Polla Mundialista Family!</center></h1>
+
+<center>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Partido</th>
+      <th>Local</th>
+      <th>Visitante</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @polla_mundialista.each do |polla_mundialistum| %>
+      <tr>
+        <td><%= polla_mundialistum.nombre %></td>
+        <td><%= polla_mundialistum.partido %></td>
+        <td><%= polla_mundialistum.local %></td>
+        <td><%= polla_mundialistum.visitante %></td>
+        <td><%= link_to 'Show', polla_mundialistum %></td>
+        <!-- <td><%= link_to 'Edit', edit_polla_mundialistum_path(polla_mundialistum) %></td> -->
+        <!-- COMENTADO PARA NO VERLO EN: /polla_mundialista
+        <td><%= link_to 'Destroy', polla_mundialistum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</center>
+
+<br>
+
+<center><%= link_to 'New Polla Mundialistum', new_polla_mundialistum_path %></center>

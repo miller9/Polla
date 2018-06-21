@@ -1,0 +1,37 @@
+<%= form_with(model: polla_mundialistum, local: true) do |form| %>
+  <% if polla_mundialistum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(polla_mundialistum.errors.count, "error") %> prohibited this polla_mundialistum from being saved:</h2>
+
+      <ul>
+      <% polla_mundialistum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partido %>
+    <%= form.text_area :partido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :local %>
+    <%= form.text_area :local %>
+  </div>
+
+  <div class="field">
+    <%= form.label :visitante %>
+    <%= form.text_area :visitante %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Polla Mundials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Colombia</th>
+      <th>Japon</th>
+      <th>Polonia</th>
+      <th>Colombia</th>
+      <th>Colombia</th>
+      <th>Senegal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @polla_mundials.each do |polla_mundial| %>
+      <tr>
+        <td><%= polla_mundial.nombre %></td>
+        <td><%= polla_mundial.colombia %></td>
+        <td><%= polla_mundial.japon %></td>
+        <td><%= polla_mundial.polonia %></td>
+        <td><%= polla_mundial.colombia %></td>
+        <td><%= polla_mundial.colombia %></td>
+        <td><%= polla_mundial.senegal %></td>
+        <td><%= link_to 'Show', polla_mundial %></td>
+        <td><%= link_to 'Edit', edit_polla_mundial_path(polla_mundial) %></td>
+        <td><%= link_to 'Destroy', polla_mundial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Polla Mundial', new_polla_mundial_path %>

@@ -1,0 +1,2 @@
+class PollaMundialistum < ApplicationRecord
+end

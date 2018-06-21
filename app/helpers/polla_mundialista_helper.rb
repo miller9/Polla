@@ -1,0 +1,2 @@
+module PollaMundialistaHelper
+end

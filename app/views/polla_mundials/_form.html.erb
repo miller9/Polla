@@ -1,0 +1,52 @@
+<%= form_with(model: polla_mundial, local: true) do |form| %>
+  <% if polla_mundial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(polla_mundial.errors.count, "error") %> prohibited this polla_mundial from being saved:</h2>
+
+      <ul>
+      <% polla_mundial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colombia %>
+    <%= form.text_area :colombia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :japon %>
+    <%= form.text_area :japon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :polonia %>
+    <%= form.text_area :polonia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colombia %>
+    <%= form.text_area :colombia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colombia %>
+    <%= form.text_field :colombia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :senegal %>
+    <%= form.text_field :senegal %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
