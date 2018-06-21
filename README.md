@@ -1,25 +1,15 @@
 # README
 
-> This is a Ruby on Rails application that allows users to create their own portfolios.
+> This is a Ruby on Rails application that allows users to create their own football games bets.
 
 ### Features
 
 - Real time chat engine for comments
-- Blog
-- Portfolio
-- Drag and drop intereface
+- Personal Sessions
+- Bets Page
+- Drag and drop interface
 
-### Code Example
-
-'''ruby
-def my_great_method
-	puts "here it is"
-end
-'''
-
-'''javascript
-alert('Hi there');
-'''
+### Original Readme
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
